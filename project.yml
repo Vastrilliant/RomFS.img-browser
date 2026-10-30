@@ -1,0 +1,24 @@
+name: RomFSBrowser
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  RomFSBrowser:
+    type: application
+    platform: iOS
+    sources:
+      - Sources
+    info:
+      path: Sources/Info.plist
+      properties:
+        CFBundleDisplayName: RomFS Browser
+        UILaunchScreen: {}
+        LSSupportsOpeningDocumentsInPlace: true
+        UIFileSharingEnabled: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.romfsbrowser
+        SWIFT_VERSION: "5.9"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        CODE_SIGNING_ALLOWED: "NO"
